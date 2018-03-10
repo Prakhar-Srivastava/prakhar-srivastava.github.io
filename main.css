@@ -1,29 +1,54 @@
+body{
+	background: url('https://upload.wikimedia.org/wikipedia/commons/0/0b/Mountains-1412683.svg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+.__NOTIFICATION_CONTAINER__{
+	position: fixed;
+	top: 0;
+	height: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 2147483640;
+	transition: 0.3s ease;
+}
 .notif{
 	transition: 0.3s ease; 
 	opacity: 1;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	border: inherit;
 	display: block;
-	height: inherit;
-	width: inherit;
+	height: fit-content;
+	width: fit-content;
 }
 .notif_out{
 	font-size: 0;
 	transition: 0.3s ease;
-	opacity: 1;
+	opacity: 0;
 	height: 0;
+	width: fit-content;
+	margin: auto;
 }
 .custom_div{
 	background: linear-gradient(rgb(246, 175, 66),rgb(249, 199, 71));
 	color: #fff;
-	margin: 5px;
-	padding: 2em;
-	text-align: center;
-	font-family: sans-serif;
-	border-radius: 4px;
-	box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.3);
-	font-size: 1000%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 1em;
+    padding-top: 0;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 4px;
+    box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.2), 0px 0px 20px 15px rgba(0,0,0,0.1);
+	min-height: min-content;
+	min-width: 25vw;
+	width: 25vw;
+	max-width: 100%;
+	font-size: 100%;
+	word-break: break-all;
+	word-wrap: break-word;
 }
 .dummy_img{
 	height: 50px;
