@@ -1,0 +1,35 @@
+.notif{
+	transition: 0.3s ease; 
+	opacity: 1;
+	margin: 0;
+	padding: 0;
+	border: inherit;
+	display: block;
+	height: inherit;
+	width: inherit;
+}
+.notif_out{
+	font-size: 0;
+	transition: 0.3s ease;
+	opacity: 1;
+	height: 0;
+}
+.custom_div{
+	background: linear-gradient(rgb(246, 175, 66),rgb(249, 199, 71));
+	color: #fff;
+	margin: 5px;
+	padding: 2em;
+	text-align: center;
+	font-family: sans-serif;
+	border-radius: 4px;
+	box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.3);
+	font-size: 1000%;
+}
+.dummy_img{
+	height: 50px;
+	width: 50px;
+}
+@keyframes initial-scale{
+	from {height: 0;width: 0;}
+	to {height: inherit;width: inherit;}
+}
