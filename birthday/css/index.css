@@ -1,0 +1,150 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.chandelier {
+	background:  radial-gradient(#444, #000 70%);
+	height: 100vh;
+	width: 100vw;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0;
+	margin: 0;
+}
+.chandelier-image {
+	background: url('../images/crystal.png');
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0;
+	margin: 0;
+}
+.heading{
+	background: transparent;
+	margin: 0;
+	padding: 1em 0 0 0;
+	color: #fff;
+	z-index: 10;
+	text-align: center;
+	font-family: 'Parisienne', cursive;
+	font-size: 275%;
+}
+.heading::first-letter{
+	font-size: 300%;
+}
+.rsm, .rsm2, .rsm3, .rsm4{
+	border: 1px solid #ddd;
+	background: linear-gradient(25deg, rgba(168, 168, 168, 0.322), transparent 85%);
+	content: ' ';
+	border-radius: 20px;
+	margin: 1.78em;
+	padding: 0;
+	display: inline;
+}
+.rsm{
+	height: 2.5em;
+	width: 2.5em;
+}
+.rsm2{
+	height: 5em;
+	width: 5em;
+}
+.rsm3{
+	height: 7.5em;
+	width: 7.5em;
+}
+.rsm4{
+	height: 10em;
+	width: 10em;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.important{
+	background-color: #f3a9b2;
+}
+.important h1.heading{
+	font-family: 'Petit Formal Script', cursive;
+	color: crimson;
+}
+.beating{
+	animation: beating-heart both 0.6s ease infinite;
+}
+@keyframes beating-heart{
+	from {
+		text-shadow: 3px 3px 20px #ed3833;
+	}
+	to {
+		text-shadow: 3px 3px 10px #ed3833;
+	}
+}
+.important .text{
+	background-color: inherit;
+	width: calc(100% - 4em);
+	padding: 2em;
+	color: crimson;
+	font-family: 'Grand Hotel', cursive;
+	font-size: 200%;
+	text-align: center;
+}
+.photos{
+	display: flex;
+	flex-wrap: wrap;
+	background: inherit;
+	margin: 20em 0 -5em 0;
+}
+.photos img{
+	display: inline-flex;
+	max-height: 50vh;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 3px 4px 20px 5px #000000a8;
+	margin: 0.5rem;
+}
+.hug{
+	display: inline-flex;
+	max-height: 50vh;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 3px 4px 20px 5px #000000a8;
+	margin: 0.5rem;
+}
+.birthday{
+	background: cyan;
+}
+.shimmering{
+	animation: shimmer both 0.6s ease infinite;
+}
+@keyframes shimmer{
+	from {
+		transform: rotate3d(1, -1, 1, 45deg);
+	}
+	to{
+		transform: rotate3d(-1, 1, -1, -45deg);
+	}
+}
+.birthday .text{
+	background-color: inherit;
+	width: calc(100% - 4em);
+	padding: 2em;
+	color: brown;
+	font-family: 'Grand Hotel', cursive;
+	font-size: 200%;
+	text-align: center;
+}
+.ribbon{
+	height: 10em;
+	width: auto;
+	display: block;
+	margin: auto;
+}
+.cake{
+	height: 20em;
+	width: auto;
+	display: block;
+	margin: auto;
+}
